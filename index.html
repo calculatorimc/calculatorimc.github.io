@@ -6,11 +6,10 @@
     <title>Your Page Title</title>
 
     <!-- Bootstrap CSS (latest version) -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="css/all.min.css">
-    <script src="https://calculator-imt.com/jscripts/sendform.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
     <!-- Custom CSS (You can add your own styles here) -->
     <style>
@@ -48,8 +47,8 @@
     <!-- Hero Section -->
     <section id="home" class="jumbotron text-center">
         <div class="container">
-            <h1 class="display-4">Your Page Title</h1>
-            <p class="lead">A brief description of your website or application.</p>
+            <h1 class="display-4">Calculatoare</h1>
+            <p class="lead">Calculatoare IMC, Masă Ideală, Calorii, Rata Metabolică de Bază pentru Adulți, Copii și Adolescenți.</p>
         </div>
     </section>
 
@@ -60,136 +59,24 @@
                 <div class="col-lg-4 mb-4">
                     <div class="card">
                         <div class="card-body">
-                             <!-- calculator start -->
-<div class="alert border border-dark">
-    <form id="calculator" class="uk-form" action="https://calculator-imt.com/ro-md/cgi/bmi.pl" method="GET" target="Popup" name="calculator" onsubmit="sendForm('800','800','calculator',''); return false;">
-    
-      <div class="mb-3 row">
-      
-       <label for="weight" class="col-sm-2 col-form-label"><strong>Masa:</strong></label>
-      
-          <div class="col-sm-10">
-      <div class="input-group">
-                      <span class="input-group-text" id="weighticon">
-      <span class="bi bi-speedometer2"></span>
-                      </span>
-         <input type="number" class="form-control" id="weight" name="weight" min="10" max="400" step="1" title="Introduceți KG rotunjit aici!" placeholder="KG" aria-describedby="weighticon">
-      </div>
-        </div>
-      </div>
-      <div class="mb-3 row">
-        <label for="height" class="col-sm-2 col-form-label"><strong>Înălțime:</strong></label>
-        <div class="col-sm-10">
-      <div class="input-group">
-                      <span class="input-group-text" id="heighticon">
-      <span class="bi bi-file-arrow-up"></span>
-                      </span>
-        <input type="number" class="form-control" id="height" name="height" min="10" max="400" step="1" title="Introduceți aici cm!" placeholder="cm" aria-describedby="heighticon">
-      </div>
-        </div>
-      </div>
-      <div class="mb-3 row">
-        <label for="gender" class="col-sm-2 col-form-label" title="Vă rugăm să introduceți sexul dvs.! Pentru a schimba sexul, dați clic pe butonul de lângă valoarea deja selectată."><strong>Sex:</strong></label>
-      <div class="col-sm-10">
-      <input type="radio" class="btn-check" id="radio2" name="gender" value="male" autocomplete="off" checked="">
-      <label class="btn btn-outline-secondary" for="radio2"><i class="bi bi-gender-male"></i> <strong>Masculin</strong></label>
-      
-      <input type="radio" class="btn-check" id="radio1" name="gender" value="female" autocomplete="off">
-      <label class="btn btn-outline-secondary" for="radio1"><i class="bi bi-gender-female"></i> <strong>Feminin</strong></label>
-      </div>
-      </div>
-      <div class="mb-3 row">
-        <label for="age" class="col-sm-2 col-form-label"><strong>Vârsta:</strong></label>
-        <div class="col-sm-10">
-      <div class="input-group">
-                      <span class="input-group-text" id="ageicon">
-      <span class="bi bi-person"></span>
-                      </span>
-        <input type="number" class="form-control" id="age" name="age" min="10" max="400" step="1" title="Vă rugăm să introduceți vârsta dvs!" placeholder="Ani" aria-describedby="ageicon">
-      </div>
-        </div>
-      </div>
-      
-      
-      <div class="mb-3 row">
-        <label for="amp_select" class="col-sm-2 col-form-label" title="Do you have amputations? Change the switch to Yes and enter one or two Amputations!"><strong>Amputare:</strong></label>
-      <div class="col-sm-10">
-      <input type="radio" class="btn-check" data-bs-toggle="collapse" href="#d4" aria-controls="d4" id="no" value="no" name="R1" autocomplete="off" checked="">
-      <label class="btn btn-outline-secondary" for="no"><i class="bi bi-x-circle-fill"></i> <strong>Nu</strong></label>
-      
-      <input type="radio" class="btn-check" data-bs-toggle="collapse" href="#d4" aria-controls="d4" id="yes" value="yes" name="R1" autocomplete="off">
-      <label class="btn btn-outline-secondary" for="yes"><i class="bi bi-check-square-fill"></i> <strong>Da</strong></label>
-      </div>
-      </div>
-      
-      <div name="d4" id="d4" class="collapse">
-      
-      <div class="input-group mb-3">
-                    <label class="input-group-text" for="amp1"><strong>1. Amputare:</strong></label><select class="form-select" name="amp1">
-                        <option selected value="0">- fară Amputări -</option>
-                        <option value="0,8">o mână</option>
-                        <option value="1,6">ambele mâini</option>
-                        <option value="3">un antebraț</option>
-                        <option value="6">ambele antebrațe</option>
-                        <option value="11,5">un braț</option>
-                        <option value="23">ambele brațe</option>
-                        <option value="1,8">un picior</option>
-                        <option value="3,6">ambele picioare</option>
-                        <option value="7,1">o gambă</option>
-                        <option value="14,2">ambele gambe</option>
-                        <option value="18,7">o coapsă</option>
-                        <option value="37,4">ambele coapse</option>
-                              </select>
-                            </div><div class="input-group mb-3">
-                    <label class="input-group-text" for="amp2"><strong>2. Amputare:</strong></label><select class="form-select" name="amp2">
-                        <option selected value="0">- fară Amputări -</option>
-                        <option value="0,8">o mână</option>
-                        <option value="1,6">ambele mâini</option>
-                        <option value="3">un antebraț</option>
-                        <option value="6">ambele antebrațe</option>
-                        <option value="11,5">un braț</option>
-                        <option value="23">ambele brațe</option>
-                        <option value="1,8">un picior</option>
-                        <option value="3,6">ambele picioare</option>
-                        <option value="7,1">o gambă</option>
-                        <option value="14,2">ambele gambe</option>
-                        <option value="18,7">o coapsă</option>
-                        <option value="37,4">ambele coapse</option>
-                              </select>	
-                              </div>
-                              
-                              
-                  
-      
-      
-      </div>
-
-      <div class="mb-3 row">
-      <div class="col-sm-12">
-      
-      
-      <button class="btn btn-outline-dark btn-lg btn-block mx-auto d-block" type="submit"><i class="bi bi-arrow-up-right-square"></i> Calculați IMC</button>
-      </div>
-      </div>
-      </form>
-    </div>
-          <!-- calculator end -->
+                            <h5 class="card-title">Calculator IMC pentru Adulți</h5>
+                            <p class="card-text"><a href="imc.html">IMC</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Feature 2</h5>
-                            <p class="card-text">Description of Feature 2.</p>
+                            <h5 class="card-title">Calculator IMC pentru Adolescenți și Copii</h5>
+                            <p class="card-text"><a href="imc-adolescenti.html">IMC Copii și Adolescenți</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Feature 3</h5>
-                            <p class="card-text">Description of Feature 3.</p>
+                            <h5 class="card-title">Calculator Consumului de Calorii</h5>
+                            <p class="card-text"><a href="calculator-consum-calorii.html">Consumul de Calorii.</a></p>
                         </div>
                     </div>
                 </div>
@@ -208,8 +95,8 @@
     </section>
 
     <!-- Bootstrap JS and Popper.js (latest version) -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
 </body>
 </html>
