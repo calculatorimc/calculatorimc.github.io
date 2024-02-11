@@ -80,7 +80,7 @@
                                     </ul>
 				  <ul class="nav navbar-nav navbar-right nav-pills mb-3">
 					  <li class="nav-item" role="presentation">
-				  <button class="btn btn-outline-success fw-bold" onclick="captureAndShare()"><i class="bi bi-share"></i> Share</button>
+				  <button class="btn btn-outline-success fw-bold" id="ShareButton"><i class="bi bi-share"></i> Share</button>
 					  </li>
 				  </ul>
 				  </nav>
@@ -238,6 +238,24 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <script src="imc/js/sendform.js"></script>
   <script src="imc/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS for Share Button -->
+  <script>
+    document.getElementById('shareButton').addEventListener('click', function() {
+        // Check if the Web Share API is supported by the browser
+        if (navigator.share) {
+            navigator.share({
+                title: 'Your Website Title',
+                text: 'Check out this website!',
+                url: window.location.href
+            })
+            .then(() => console.log('Successfully shared'))
+            .catch((error) => console.error('Error sharing:', error));
+        } else {
+            // Fallback for browsers that do not support Web Share API
+            alert('Web Share API is not supported in this browser. You can manually copy the URL.');
+        }
+    });
+</script>
 
 		</main>
 	</body>	 
