@@ -22,8 +22,10 @@ label {
   font-size: 115%;
 }
 input {
+  line-height: 3em;
   border: 2px solid green;
   width: 35%;
+  padding-left: 1em;
 }
 select {
   border: 2px solid green;
