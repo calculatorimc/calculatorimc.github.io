@@ -30,6 +30,7 @@ input {
 select {
   border: 2px solid green;
   width: 35%;
+  height: 3em;
 }
 h4 {
   font-weight: bold;
