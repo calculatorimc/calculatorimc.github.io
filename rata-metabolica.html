@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Calculați IMC (Indicele de Masă Corporală) - CalculatorIMC</title>
+    <title>Calculați RMB (Rata Metabolică Bazală) - CalculatorIMC</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/imc.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/sendform.js" defer></script>
+    <script src="https://calculator-imt.com/jscripts/sendform.js" defer></script>
   </head>
   <body>
  <header>
@@ -18,9 +18,9 @@
 </header>
 <article class="calculator w3-container w3-content" style="max-width: 900px">
   <section class="name w3-panel">
-    Calculați IMC
+    Calculați Rata Metabolică Bazală
   </section>
-  <form id="calculator" class="w3-container w3-card w3-text-black w3-margin" action="https://calculator-imt.com/ro-md/cgi/bmi.pl" method="GET" target="Popup" name="calculator" onsubmit="sendForm('800','800','calculator',''); return false;">
+  <form id="calculator" class="w3-container w3-card w3-text-black w3-margin" action="https://calculator-imt.com/ro-md/cgi/bmr.pl" method="GET" target="Popup" name="calculator" onsubmit="sendForm('800','800','calculator',''); return false;">
 
   <section class="inputSection w3-panel">
     <label>Înălțimea ta (cm):</label>
@@ -42,14 +42,13 @@
   <label>Femeie</label>
       </section>
   <section class="buttonSection w3-panel">
- <button class="w3-btn w3-dark-grey w3-round"  type="submit"> Calculați IMC</button></form>
+ <button class="w3-btn w3-dark-grey w3-round"  type="submit"> Calculați RMB</button></form>
   </section>
 </article>
 <article class="about w3-content w3-panel" style="max-width: 900px">
-  <h4>Ce Este IMC?</h4>
+  <h4>Ce Este Rata Metabolică Bazală?</h4>
 <div class="text">
-  Indicele de masă corporală (BMI, IMC) este o valoare care vă permite să evaluați gradul de corespondență dintre greutatea unei persoane și înălțimea acesteia și, prin urmare, să evaluați indirect dacă greutatea este insuficientă, normală sau excesivă. Important atunci când se determină indicațiile pentru necesitatea tratamentului.
-  Rezultatele pot să nu fie exacte pentru sportivii profesioniști.
+  Rata Metabolică Bazală (RMB): Este cantitatea minimă de energie necesară pentru a menține funcțiile vitale ale organismului în repaus, la o temperatură ambientală confortabilă. Aceasta reprezintă aproximativ 60-75% din consumul total de calorii al unei persoane. RMB variază de la o persoană la alta, fiind influențată de factori precum vârsta, sexul, greutatea, înălțimea și compoziția corporală.
 </div>
 </article>
 <article class="calculators w3-panel w3-content" style="max-width: 900px;">

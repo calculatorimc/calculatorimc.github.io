@@ -1,102 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
-
-    <!-- Bootstrap CSS (latest version) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
-    <!-- Custom CSS (You can add your own styles here) -->
-    <style>
-        /* Add your custom styles here */
-        body {
-            padding-top: 56px; /* Adjust this based on the height of your navbar */
-        }
-
-        /* Add more styles as needed */
-    </style>
-</head>
-<body>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Calculatoare</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="imc.html">IMC</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="rmb.html">RMB</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="jumbotron text-center">
-        <div class="container">
-            <h1 class="display-4">Calculatoare</h1>
-            <p class="lead">Calculatoare IMC, Masă Ideală, Calorii, Rata Metabolică de Bază pentru Adulți, Copii și Adolescenți.</p>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Calculator IMC pentru Adulți</h5>
-                            <p class="card-text"><a href="imc.html">IMC</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Calculator IMC pentru Adolescenți și Copii</h5>
-                            <p class="card-text"><a href="imc-adolescenti.html">IMC Copii și Adolescenți</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Calculator Consumului de Calorii</h5>
-                            <p class="card-text"><a href="calculator-consum-calorii.html">Consumul de Calorii.</a></p>
-                        </div>
-                    </div>
-                </div>
+<html>
+  <head>
+  <title>Calculators</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      Calculators v0.0.1
+    </header>
+    <article class="calculators w3-content" id="calculatoare" style="max-width:900px">
+      <section class="name w3-container">
+        Calculatoare Sportive
+      </section>
+      <section class="w3-container">
+        <div class="w3-panel w3-half">
+          <div class="w3-card">
+            <a href="imc.html"><img src="img/Body-Mass-Index.webp" alt="" width="100%"></a>
+            <div class="text">
+            <a href="imc.html">Calculați IMC</a>
             </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="bg-light py-5">
-        <div class="container text-center">
-            <h2>Contact Us</h2>
-            <p class="lead">Feel free to reach out to us for any inquiries or feedback.</p>
-            <i class="fas fa-envelope fa-2x"></i>
-            <p>Email: your@email.com</p>
+        <div class="w3-panel w3-half">
+          <div class="w3-card">
+            <a href="calorii.html"><img src="img/Calculati-Caloriile.jpg.webp" alt="" width="100%"></a>
+            <div class="text">
+            <a href="calorii.html">Consumul de Calorii</a>
+            </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Bootstrap JS and Popper.js (latest version) -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-
-</body>
+      </section>
+      <section class="w3-container">
+        <div class="w3-panel w3-half">
+          <div class="w3-card">
+            <a href="imc-copii.html"><img src="img/imc-copii-si-adolescenti.jpg.webp" alt="" width="100%"></a>
+            <div class="text">
+              <a href="imc-copii.html">IMC Copii și Adolescenți</a>
+            </div>
+          </div>
+        </div>
+        <div class="w3-panel w3-half">
+          <div class="w3-card">
+            <a href="greutatea-ideala.html"><img src="img/Ideal-Weight-2048x1365.jpg.webp" alt="" width="100%"></a>
+            <div class="text">
+              <a href="greutatea-ideala.html">Greutatea Ideală</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w3-container">
+        <div class="w3-panel w3-half">
+          <div class="w3-card">
+            <a href="rata-metabolica.html"><img src="img/Weight-Watchers-scaled.jpg.webp" alt="" width="100%"></a>
+            <div class="text">
+              <a href="rata-metabolica.html">Rata Metabolică</a>
+            </div>
+          </div>
+        </div>
+        <div class="w3-panel w3-half">
+          <div class="w3-card">
+            <a href="greutatea-ideala-copii-si-adolescenti.html"><img src="img/ideal-ves-dety.jpg.webp" alt="" width="100%"></a>
+            <div class="text">
+              <a href="greutatea-ideala-copii-si-adolescenti.html">Greutatea Ideală la Copii și Adolescenți</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+    
+    <footer>
+        <a href="mailto:info@Calculator-IMT.com">Contact</a>
+        <div class="menu">
+          <a href="#calculatoare">Calculatoare</a><br>
+          </div>
+        <div class="copyright">
+          ©CalculatorIMC, 2024
+        </div>
+    </footer>
+  </body>
 </html>

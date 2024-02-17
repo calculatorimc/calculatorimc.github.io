@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Calculați IMC (Indicele de Masă Corporală) - CalculatorIMC</title>
+    <title>Calculați Greutatea Ideală - CalculatorIMC</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="css/imc.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/sendform.js" defer></script>
   </head>
@@ -18,21 +18,13 @@
 </header>
 <article class="calculator w3-container w3-content" style="max-width: 900px">
   <section class="name w3-panel">
-    Calculați IMC
+    Calculați Greutatea Ideală
   </section>
-  <form id="calculator" class="w3-container w3-card w3-text-black w3-margin" action="https://calculator-imt.com/ro-md/cgi/bmi.pl" method="GET" target="Popup" name="calculator" onsubmit="sendForm('800','800','calculator',''); return false;">
+  <form id="calculator" class="w3-container w3-card w3-text-black w3-margin" action="https://calculator-imt.com/ro-md/cgi/ibw.pl" method="GET" target="Popup" name="calculator" onsubmit="sendForm('800','800','calculator',''); return false;">
 
   <section class="inputSection w3-panel">
     <label>Înălțimea ta (cm):</label>
     <div class="inputAround"><input class="input w3-mobile" id="height" name="height" type="text" placeholder="cm"></div>
-  </section>
-  <section class="inputSection w3-panel">
-    <label>Greutatea ta (kg):</label>
-    <div class="inputAround"><input class="input w3-mobile" id="weight" name="weight" type="text" placeholder="KG"></div>
-  </section>
-  <section class="inputSection w3-panel">
-    <label>Vârsta ta (ani):</label>
-    <div class="inputAround"><input class="input w3-mobile" id="age" name="age" type="text" placeholder="ani"></div>
   </section>
     <section class="inputSection w3-panel">
   <input class="w3-radio" type="radio" name="gender" value="male" checked>
@@ -42,14 +34,22 @@
   <label>Femeie</label>
       </section>
   <section class="buttonSection w3-panel">
- <button class="w3-btn w3-dark-grey w3-round"  type="submit"> Calculați IMC</button></form>
+ <button class="w3-btn w3-dark-grey w3-round"  type="submit"> Calculați Greutatea Ideală</button></form>
   </section>
 </article>
 <article class="about w3-content w3-panel" style="max-width: 900px">
-  <h4>Ce Este IMC?</h4>
+  <h4>Ce este greutatea ideală și cum se calculează?</h4>
 <div class="text">
-  Indicele de masă corporală (BMI, IMC) este o valoare care vă permite să evaluați gradul de corespondență dintre greutatea unei persoane și înălțimea acesteia și, prin urmare, să evaluați indirect dacă greutatea este insuficientă, normală sau excesivă. Important atunci când se determină indicațiile pentru necesitatea tratamentului.
-  Rezultatele pot să nu fie exacte pentru sportivii profesioniști.
+  Greutatea ideală nu este o valoare fixă și universală, deoarece variază în funcție de mai mulți factori, inclusiv înălțimea, vârsta, sexul, compoziția corporală și nivelul de activitate fizică al unei persoane. Există însă câteva metode comune de a estima greutatea ideală:
+  <ul class="w3-ul">
+<li>1. <b>Indicele de masă corporală (IMC):</b> Este o metodă larg răspândită de calculare a greutății ideale. Formula IMC este: IMC = greutate (kg) / (înălțimea în metri)^2. Valorile normale pentru adulți sunt în general între 18,5 și 24,9. Totuși, IMC nu ține cont de distribuția grăsimii corporale și poate oferi uneori estimări incorecte, mai ales pentru persoanele cu o masă musculară crescută.</li>
+<li>
+2. <b>Calcularea greutății ideală în funcție de înălțime:</b> O altă abordare este să se determine o greutate ideală în funcție de înălțime. Există diferite formule, iar una dintre ele este să se adauge 45,5 kg pentru prima țoală de înălțime și 2,3 kg pentru fiecare țoală de înălțime ulterioară. Aceasta este doar o sugestie generală și nu se aplică tuturor.
+</li>
+<li>
+3. <b>Evaluarea compoziției corporale:</b> Greutatea ideală poate fi, de asemenea, determinată prin evaluarea procentului de grăsime corporală, în loc să se privească doar la greutatea totală. Persoanele cu un procent de grăsime sănătos pot avea o greutate mai mare, dar să aibă o compoziție corporală sănătoasă.
+</li>  </ul>
+Este important să subliniem că aceste metode oferă doar estimări generale, iar evaluarea greutății ideale trebuie să țină cont de contextul individual al fiecărei persoane. Consultarea cu un profesionist medical sau un nutriționist poate oferi o abordare personalizată și mai precisă.
 </div>
 </article>
 <article class="calculators w3-panel w3-content" style="max-width: 900px;">
@@ -67,9 +67,9 @@
   </div>
   <div class="w3-panel w3-half">
     <div class="w3-card">
-      <a href="greutatea-ideala.html"><img src="img/Ideal-Weight-2048x1365.jpg.webp" alt="" width="100%"></a>
+      <a href="calorii.html"><img src="img/Calculati-Caloriile.jpg.webp" alt="" width="100%"></a>
       <div class="text">
-        <a href="greutatea-ideala.html">Greutatea Ideală</a>
+      <a href="calorii.html">Consumul de Calorii</a>
       </div>
     </div>
   </div>

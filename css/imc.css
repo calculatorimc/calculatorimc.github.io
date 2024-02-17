@@ -1,0 +1,53 @@
+body {
+  background-color: white;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+header {
+  background-color: black;
+  padding: 3px;
+  color: white;
+  font-size: 135%;
+}
+.name {
+  font-size: 125%;
+}
+.inputAround {
+  padding: 3px;
+}
+label {
+  font-size: 115%;
+}
+input {
+  border: 2px solid green;
+  width: 35%;
+}
+select {
+  border: 2px solid green;
+  width: 35%;
+}
+h4 {
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+.about {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  text-align: left;
+                font-style: normal;
+                text-transform: none;
+}
+.text {
+  font-size: 120%;
+  padding: 5px;
+}
+.text a {
+  text-decoration: none;
+}
+.calculator {
+  margin-top: 20px;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculați Consumul de Calorii - CalculatorIMC</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/imc.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/sendform.js" defer></script>
+  </head>
+  <body>
+ <header>
+  CalculatorIMC
+</header>
+<article class="calculator w3-container w3-content" style="max-width: 900px">
+  <section class="name w3-panel">
+    Calculați Consumul de Calorii
+  </section>
+  <form id="calculator" class="w3-container w3-card w3-text-black w3-margin" action="https://calculator-imt.com/ro-md/cgi/calorie_calculator.pl" method="GET" target="Popup" name="calculator" onsubmit="sendForm('800','800','calculator',''); return false;">
+
+
+  <section class="inputSection w3-panel">
+    <label>Greutatea ta (kg):</label>
+    <div class="inputAround"><input class="input w3-mobile" id="weight" name="weight" type="text" placeholder="KG"></div>
+  </section>
+  <section class="inputSection w3-panel">
+    <label for="age">Vârsta ta (ani):</label>
+    <div class="inputAround">
+  <select class="w3-mobile select" id="activity" size="1" name="activity" aria-label="Activity">
+    <option value="Muncă Ușoară" selected>Muncă Ușoară</option>
+    <option value="Muncă Medie">Muncă Medie</option>
+    <option value="Muncă Grea">Muncă Grea</option>
+    <option value="Aerobică">Aerobică</option>
+    <option value="Badminton">Badminton</option>
+    <option value="Baschet">Baschet</option>
+    <option value="Alpinism">Alpinism</option>
+    <option value="Culturism">Culturism</option>
+    <option value="Fotbal">Fotbal</option>
+    <option value="Gimnastică">Gimnastică</option>
+    <option value="Fugă">Fugă</option>
+    <option value="Mers Sportiv">Mers Sportiv</option>
+    <option value="Ciclism">Ciclism</option>
+    <option value="Canotaj">Canotaj</option>
+    <option value="Înot">Înot</option>
+    <option value="Navigație Maritimă">Navigație Maritimă</option>
+    <option value="Ski">Ski</option>
+    <option value="Squash">Squash</option>
+    <option value="Dans">Dans</option>
+    <option value="Tenis">Tenis</option>
+    <option value="Volei">Volei</option>
+    <option value="Condus">Condus</option>
+    <option value="Călcarea Hainelor">Călcarea Hainelor</option>
+    <option value="Urmărit TV">Urmărit TV</option>
+    <option value="Tăiat Lemne">Tăiat Lemne</option>
+    <option value="Gătit">Gătit</option>
+    <option value="Stat Culcat">Stat Culcat</option>
+    <option value="Curățenie">Curățenie</option>
+    <option value="Tuns Gazonul">Tuns Gazonul</option>
+    <option value="Sex">Sex</option>
+    <option value="Urcare Scări">Urcare Scări</option>
+</select></div>
+</section>
+  <section class="buttonSection w3-panel">
+ <button class="w3-btn w3-dark-grey w3-round"  type="submit"> Calculați Caloriile</button></form>
+  </section>
+</article>
+<article class="about w3-content w3-panel" style="max-width: 900px">
+  <h4>Ce Este Consumul de Calorii?</h4>
+<div class="text">
+  Consumul de calorii se referă la cantitatea totală de calorii pe care o persoană o obține din alimente și băuturi și pe care organismul o utilizează pentru a-și susține activitățile zilnice și funcțiile corporale. Caloriile reprezintă o unitate de măsură a energiei furnizate de alimente și sunt esențiale pentru ca organismul să funcționeze corespunzător.
+</div>
+</article>
+<article class="calculators w3-panel w3-content" style="max-width: 900px;">
+<section class="name">
+  Alte calculatoare
+</section>
+<section class="w3-container">
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="imc-copii.html"><img src="img/imc-copii-si-adolescenti.jpg.webp" alt="" width="100%"></a>
+      <div class="text">
+        <a href="imc-copii.html">IMC Copii și Adolescenți</a>
+      </div>
+    </div>
+  </div>
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="greutatea-ideala.html"><img src="img/Ideal-Weight-2048x1365.jpg.webp" alt="" width="100%"></a>
+      <div class="text">
+        <a href="greutatea-ideala.html">Greutatea Ideală</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="w3-container">
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="rata-metabolica.html"><img src="img/Weight-Watchers-scaled.jpg.webp" alt="" width="100%"></a>
+      <div class="text">
+        <a href="rata-metabolica.html">Rata Metabolică</a>
+      </div>
+    </div>
+  </div>
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="greutatea-ideala-copii-si-adolescenti.html"><img src="img/ideal-ves-dety.jpg.webp" alt="" width="100%"></a>
+      <div class="text">
+        <a href="greutatea-ideala-copii-si-adolescenti.html">Greutatea Ideală la Copii și Adolescenți</a>
+      </div>
+    </div>
+  </div>
+</section>
+</article>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculați IMC (Indicele de Masă Corporală) - CalculatorIMC</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/imc.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/sendform.js" defer></script>
+  </head>
+  <body>
+ <header>
+  CalculatorIMC
+</header>
+<article class="calculator w3-container w3-content" style="max-width: 900px">
+  <section class="name w3-panel">
+    Calculați IMC la Copil sau Adolescent
+  </section>
+  <form id="calculator" class="w3-container w3-card w3-text-black w3-margin" action="https://calculator-imt.com/ro-md/cgi/bmi_kids.pl" method="GET" target="Popup" name="calculator" onsubmit="sendForm('800','800','calculator',''); return false;">
+
+  <section class="inputSection w3-panel">
+    <label>Înălțimea ta (cm):</label>
+    <div class="inputAround"><input class="input w3-mobile" id="height" name="height" type="text" placeholder="cm"></div>
+  </section>
+  <section class="inputSection w3-panel">
+    <label>Greutatea ta (kg):</label>
+    <div class="inputAround"><input class="input w3-mobile" id="weight" name="weight" type="text" placeholder="KG"></div>
+  </section>
+  <section class="inputSection w3-panel">
+    <label for="age">Vârsta ta (ani):</label>
+    <div class="inputAround">
+       <select class="w3-mobile select" aria-label="Age" size="1" name="age">
+      <option value="1">Sub 8 Ani</option>
+      <option value="8" selected>8 Ani</option>
+      <option value="9">9 Ani</option>
+      <option value="10">10 Ani</option>
+      <option value="11">11 Ani</option>
+      <option value="12">12 Ani</option>
+      <option value="13">13 Ani</option>
+      <option value="14">14 Ani</option>
+      <option value="15">15 Ani</option>
+      <option value="16">16 Ani</option>
+      <option value="17">17 Ani</option>
+      <option value="18">18 Ani</option>
+      </select></div>
+    </section>
+    <section class="inputSection w3-panel">
+  <input class="w3-radio" type="radio" name="gender" value="boy" checked>
+  <label>Băiat</label>
+  
+  <input class="w3-radio" type="radio" name="gender" value="girl">
+  <label>Fată</label>
+      </section>
+   <section class="buttonSection w3-panel">
+ <button class="w3-btn w3-dark-grey w3-round"  type="submit"> Calculați IMC</button></form>
+  </section>
+</article>
+<article class="about w3-content w3-panel" style="max-width: 900px">
+  <h4>Ce Este IMC la Copii și Adolescenți?</h4>
+<div class="text">
+  <p>Indicele de masă corporală (IMC) este o măsură utilizată și pentru evaluarea greutății corporale la copii și adolescenți, dar este interpretat diferit față de adulți, deoarece greutatea corporală variază în funcție de vârstă și sex la aceste grupuri de vârstă în dezvoltare. În loc să se folosească aceleași categorii de IMC ca pentru adulți, pentru copii și adolescenți se utilizează centile de creștere.
+</p>
+ <p>Procesul implicaților pentru copii și adolescenți este:</p>
+  <ul class="w3-ul">
+    <li>
+  1. <b>Calcularea IMC:</b> Se utilizează aceeași formulă ca și pentru adulți - IMC = greutate (kg) / (înălțimea în metri)^2. Cu toate acestea, valoarea rezultată este apoi comparată cu distribuția de IMC în funcție de vârstă și sex, pentru a se obține o centilă de creștere.
+  </li>
+  <li>
+  2. <b>Centile de creștere:</b> IMC-ul copiilor și adolescenților este evaluat în funcție de centile de creștere, care reprezintă percentilele de distribuție a IMC-ului în raport cu alte persoane de aceeași vârstă și sex. Aceste centile arată în ce măsură un copil sau adolescent se situează în comparație cu alți tineri din aceeași categorie de vârstă și sex.
+</li> <li> 
+  3. <b>Categorii de IMC pentru copii și adolescenți:</b> În funcție de centilele de creștere, se pot utiliza categorii precum:
+     - Subponderal: Sub centila 5
+     - Greutate normală: Centila 5 până la 85
+     - Supraponderal: Centila 85 până la 95
+     - Obezitate: Peste centila 95
+  </li>
+  </ul>
+  <p>Este important să înțelegem că aceste categorii sunt orientative, iar evaluarea greutății la copii și adolescenți ar trebui realizată de un profesionist medical care poate ține cont de mai mulți factori, inclusiv stadiul de dezvoltare, compoziția corporală și istoricul medical al copilului sau adolescentului. Este întotdeauna recomandat să discutați cu un medic sau un specialist în sănătatea copiilor pentru evaluarea și interpretarea corectă a IMC-ului la această grupă de vârstă.
+</p></div>
+</article>
+<article class="calculators w3-panel w3-content" style="max-width: 900px;">
+<section class="name">
+  Alte calculatoare
+</section>
+<section class="w3-container">
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="calorii.html"><img src="img/Calculati-Caloriile.jpg.webp" alt="" width="100%"></a>
+      <div class="text">
+      <a href="calorii.html">Consumul de Calorii</a>
+      </div>
+    </div>
+  </div>
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="greutatea-ideala.html"><img src="img/Ideal-Weight-2048x1365.jpg.webp" alt="" width="100%"></a>
+      <div class="text">
+        <a href="greutatea-ideala.html">Greutatea Ideală</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="w3-container">
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="rata-metabolica.html"><img src="img/Weight-Watchers-scaled.jpg.webp" alt="" width="100%"></a>
+      <div class="text">
+        <a href="rata-metabolica.html">Rata Metabolică</a>
+      </div>
+    </div>
+  </div>
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="greutatea-ideala-copii-si-adolescenti.html"><img src="img/ideal-ves-dety.jpg.webp" alt="" width="100%"></a>
+      <div class="text">
+        <a href="greutatea-ideala-copii-si-adolescenti.html">Greutatea Ideală la Copii și Adolescenți</a>
+      </div>
+    </div>
+  </div>
+</section>
+</article>
+  </body>
+</html>
